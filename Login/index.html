@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap');
+        body{
+            background: linear-gradient(45deg, #f5d1a1, rgb(248, 205, 113), #f8ae75);
+            /* width: 100w; */
+            /* height: 100vh; */
+            overflow: hidden;
+        }
+        .main{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* border: 1px solid #fefefe; */
+            background-color: #fefefe;
+            width: "fit-content";
+            height: "fit-content";
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            box-shadow: 0 10px 30px #fe9253;
+        }
+
+        h3{
+            color:#c9591d;
+            font-family: "Phudu", serif;
+            font-size: 18px;
+        }
+    
+        .img{
+            width: 250px;
+            height: 310px;
+            display: block;
+            border-radius: 5px;
+        }
+    
+        .forInput{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            padding: 20px;
+        }
+        .forImg{
+            width: 70%;
+        }
+        input{
+            width: 200px;
+            height: 33px;
+            margin-bottom: 5px;
+            background-color: rgb(239, 251, 255);
+            border-radius: 5px;
+            border: 2px solid #f1988e;
+            outline: none;
+            font-family: "Phudu", serif;
+            padding-left: 6px;
+            color:rgb(202, 115, 39);
+
+        }
+        button{
+            margin-top: 6px;
+            width: 200px;
+            height: 33px;
+            width: 50%;
+            font-size: 15px;
+            background-color: #ff7b63;
+            border-radius: 6px;
+            border-color: #ffa963;
+            font-family: "Phudu", serif;
+            color:rgb(255, 232, 201);
+        }
+
+        button:hover{
+            margin-top: 6px;
+            width: 200px;
+            height: 33px;
+            width: 50%;
+            font-size: 15px;
+            background-color: #ffa463;
+            border-radius: 6px;
+            border-color: #ffe790;
+            font-family: "Phudu", serif;
+            color:rgb(255, 232, 201);
+        }
+        .check{
+            font-size: 10px;
+            margin-top: 11px;
+            
+        }
+        .check input{
+            width: 16px;
+            height: 30px;
+            cursor: pointer;
+            accent-color: #f5af24;
+        }
+        .check label{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            gap: 2px;
+        }
+       </style>
+</head>
+<body>
+   <div class="main">
+    <div class="formImg">
+        <img src="media\img.png" alt="No image" class="img">
+    </div>
+    <div class="forInput">
+        <h3>Welcome Back!</h3>
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="save" id="save">Login</button>
+        <div class="check">
+            <label for="checkBox">
+            <input type="checkbox">I read and agree to 
+            <a href="#"> terms and conditions</a>
+        </label>
+    </div>
+    </div>
+   </div> 
+
+</body>
+</html>
